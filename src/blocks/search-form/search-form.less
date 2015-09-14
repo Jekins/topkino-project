@@ -1,0 +1,29 @@
+/* search-form ***********************/
+.search-form {
+	position: relative;
+
+	&__input {
+		border-radius: @br-base !important;
+	}
+	&__btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background-color: transparent;
+		border:none;
+		outline: none;
+		display: inline-block;
+		color: @c-white;
+		padding: 0 @block-xm + 5;
+		line-height: 1;
+
+		> * {
+			font-size: 28px;
+			transition: @tr-base;
+		}
+		&:hover > * {
+			color: @c-pink;
+		}
+	}
+}

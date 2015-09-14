@@ -1,0 +1,54 @@
+/* varibles ***********************/
+@c-white: #fff;
+@c-black: #000;
+@c-dark: #212121;
+@c-blue: #3F51B5;
+@c-pink: #f50057;
+@c-gray: #686868;
+@c-red: #F44336;
+@c-green: #009688;
+
+@x: 1;
+
+@fz-very-small: 10px * @x;
+@fz-small: 12px * @x;
+@fz-base: 14px * @x;
+@fz-large: 16px * @x;
+@fz-very-large: 18px * @x;
+
+@ff-base: @ff-r;
+@ff-r: 'Roboto', sans-serif;
+@ff-r-c: 'Roboto Condensed', sans-serif;
+
+@block-m: 60px;
+@block-sm: @block-m / 2;
+@block-xm: @block-m / 4;
+
+@body-bg: @c-dark;
+@body-ff: @ff-base;
+@body-c: @c-white;
+@body-fz: @fz-base;
+
+@link-c: @c-pink;
+@link-hover-c: @c-pink;
+
+@heading-ff: @ff-r-c;
+
+@input-h: 40px;
+@input-p: @block-xm @block-sm;
+@input-fz: @fz-base;
+@input-c: @c-white;
+@input-bg: rgba(0,0,0,0.4);
+@input-border: none;
+@input-border-hover: transparent;
+@input-placeholder-c: lighten(@input-c, 30%);
+@input-error-c: @c-red;
+
+@hr-c: lighten(@c-gray, 5%);
+
+@bs-base: 0 3px 4px 0 rgba(0,0,0,0.4);
+
+@br-base: 3px;
+
+@tr-fast: ease-in-out 0.1s;
+@tr-base: ease-in-out 0.2s;

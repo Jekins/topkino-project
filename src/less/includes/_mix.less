@@ -1,0 +1,48 @@
+/* mixins **********************/
+.clearfix() {
+	&:after {
+		content: '';
+		display: block;
+		width: 100%;
+		clear: both;
+	}
+}
+
+.absolute() {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: block;
+}
+
+.btn-color(@bg; @bg-h; @c) {
+	background-color: @bg;
+	color: @c;
+
+	&:hover {
+		background-color: @bg-h;
+	}
+}
+
+.tiles-color(@bg) {
+	.tiles__widget {
+		background-color: darken(@bg, 5%);
+	}
+	.tiles__lead {
+		background-color: @bg;
+	}
+	.tiles__bar,
+	.tiles__places {
+		background-color: darken(@bg, 8%);
+	}
+	.tiles__close {
+		background-color: darken(@bg, 10%);
+		border-color: darken(@bg, 4%);
+
+		&:hover {
+			background-color: darken(@bg, 15%);
+		}
+	}
+}

@@ -1,0 +1,2 @@
+/* header ***********************/
+$(document).ready(function () {});

@@ -1,0 +1,29 @@
+/* sidebar-btn ***********************/
+.sidebar-btn {
+	display: inline-block;
+	margin-right: @block-sm;
+
+	> * {
+		display: block;
+		height: 3px;
+		width: 28px;
+		background-color: @c-white;
+		margin-bottom: 4px;
+		transition: @tr-fast;
+		position: relative;
+		top: 0;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&:hover > * {
+		background-color: @c-pink;
+	}
+	&:hover > *:first-child {
+		top: -2px;
+	}
+	&:hover > *:last-child {
+		top: 2px;
+	}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "TopKino",
+  "version": "0.0.1",
+  "description": "Project TopKino by Jekins",
+  "repository": {
+    "type": "git",
+    "url": "http://topkino.tv"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-autoprefixer": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-imagemin": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest"
+  }
+}
