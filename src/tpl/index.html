@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">-->
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 
@@ -14,7 +14,7 @@
 		<link href="css/all-styles.min.css" rel="stylesheet">
 
 		<!--Scripts-->
-		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.min.js"></script>
 		<script src="js/all-scripts.min.js"></script>
 
 		<!--[if lt IE 9]>
@@ -24,7 +24,6 @@
 	</head>
 
 	<body>
-
 		<!-- header -->
 		<header class="header">
 			<div class="container">
@@ -39,7 +38,7 @@
 					<!-- /sidebar btn -->
 
 					<!-- logo -->
-					<a class="logo" href="#" alt="topkino.tv">TopKino.tv</a>
+					<a class="logo" href="#" title="На главную">TopKino.tv</a>
 					<!-- /logo -->
 
 				</div>
@@ -75,6 +74,95 @@
 			</div>
 		</header>
 		<!-- /header -->
+
+		<!-- carousel -->
+		<div class="carousel">
+			<div class="carousel__bg">
+				<div class="carousel__bg-img" style=""></div>
+			</div>
+			<div class="carousel__inner">
+				<div class="container">
+
+					<!-- heading -->
+					<div class="heading">
+						<h2 class="heading__title">
+							Лучшие новинки
+						</h2>
+						<div class="heading__lead">
+							<div class="heading__lead-inner">
+								Не пропустите новинки в мире кино, сериалов, мультфильмов и аниме
+							</div>
+						</div>
+					</div>
+					<!-- /heading -->
+
+					<div id="bespoke-carousel-init">
+						<span id="input-method"></span>
+						<div class="bespoke-carousel">
+							<section class="bespoke-carousel__item">
+
+								<!-- card top -->
+								<div class="card-top">
+									<div class="card-top__bg">
+										<div class="card-top__bg-img" style="background-image: url(img/the-avengers-movie-poster.jpg);"></div>
+									</div>
+									<div class="card-top__inner">
+										<h3 class="card-top__title">
+											Не очень длинное название фильма. Часть 3
+										</h3>
+										<div class="card-top__lead">
+											The english heading of films. Part 3
+										</div>
+									</div>
+									<a href="#" class="card-top__link"></a>
+									<a href="#" class="card-top__btn btn-circle">
+										<i class="material-icons">&#xE037;</i>
+									</a>
+								</div>
+								<!-- /card top -->
+
+							</section>
+							<section class="bespoke-carousel__item">
+
+								<!-- card top -->
+								<div class="card-top">
+									<div class="card-top__bg">
+										<div class="card-top__bg-img" style="background-image: url(img/the-avengers-movie-poster.jpg);"></div>
+									</div>
+									<div class="card-top__inner">
+										<h3 class="card-top__title">
+											Не очень длинное название фильма. Часть 3
+										</h3>
+										<div class="card-top__lead">
+											The english heading of films. Part 3
+										</div>
+									</div>
+									<a href="#" class="card-top__link"></a>
+									<a href="#" class="card-top__btn btn-circle">
+										<i class="material-icons">&#xE037;</i>
+									</a>
+								</div>
+								<!-- /card top -->
+
+							</section>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<!-- body -->
+		<div class="body" style="position: relative">
+			<div class="container">
+
+			</div>
+		</div>
+		<!-- /body -->
+
+		<script src="js/bespoke.min.js"></script>
+		<script src="js/carousel.js"></script>
 
 	</body>
 

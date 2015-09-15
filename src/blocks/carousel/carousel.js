@@ -1,0 +1,4 @@
+/* carousel ***********************/
+$(document).ready(function () {
+
+});

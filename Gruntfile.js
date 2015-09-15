@@ -167,6 +167,19 @@ module.exports = function (grunt) {
 					livereload: true
 				}
 			}
+		},
+		browserSync: {
+			dev: {
+				bsFiles: {
+					src: [
+						'dist/**/*'
+					]
+				},
+				options: {
+					watchTask: true,
+					server: 'dist'
+				}
+			}
 		}
 	});
 
@@ -180,10 +193,12 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-autoprefixer');
+	grunt.loadNpmTasks('grunt-browser-sync');
 
 
 	grunt.registerTask('default', ['clean:dist', 'concat:js', 'uglify', 'copy', 'less', 'concat:css', 'clean:css', 'autoprefixer']);
 	grunt.registerTask('serve', ['default', 'connect', 'watch']);
+	grunt.registerTask('sync', ['default', 'browserSync', 'watch']);
 	grunt.registerTask('img', ['default', 'imagemin']);
 
 };

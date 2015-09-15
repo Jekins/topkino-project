@@ -8,6 +8,8 @@
 @c-red: #F44336;
 @c-green: #009688;
 
+@c-base: @c-pink;
+
 @x: 1;
 
 @fz-very-small: 10px * @x;
@@ -38,10 +40,10 @@
 @input-p: @block-xm @block-sm;
 @input-fz: @fz-base;
 @input-c: @c-white;
-@input-bg: rgba(0,0,0,0.4);
+@input-bg: rgba(0,0,0,0.3);
 @input-border: none;
 @input-border-hover: transparent;
-@input-placeholder-c: lighten(@input-c, 30%);
+@input-placeholder-c: @input-c;
 @input-error-c: @c-red;
 
 @hr-c: lighten(@c-gray, 5%);
