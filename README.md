@@ -1,6 +1,5 @@
 # TopKino project
 
- * Сайт: http://topkino.tv
  * Дизайн и Front-end: [Jekins Designs](http://jekins.ru)
 
 
